@@ -1,0 +1,70 @@
+programa
+{
+  funcao inicio()
+  {
+real quant = 0.0, total = 0.0
+
+
+    inteiro opcao
+          escreva("Lanconhete do Henrique")
+    faca
+    {
+
+
+      escreva(" \n MENU DE CARDAPIO")
+      escreva(" \n 1 -> x-bacon R$ 34,00")
+      escreva(" \n 2 -> x-salada R$ 24,00")
+      escreva(" \n 3 -> x-egg R$ 14,00")
+      escreva(" \n 4 -> refrigerante R$ 4,00")
+      escreva(" \n 5 -> finalizar pedido")
+     
+     
+      escreva("\n DIGITE O NUMERO DO SEU PEDIDO!: ")
+
+
+     
+      leia(opcao)                                    //HENRIQUE  ARANTES 3º
+
+
+      escolha (opcao)
+      {
+        caso 1:
+          escreva ("\n Digite a quantidade:  ")
+          leia(quant)
+          total = total +(quant*34.00)
+        pare
+       
+        caso 2:
+                    escreva ("\n Digite a quantidade:  ")
+          leia(quant)
+          total = total +(quant*24.00)
+        pare
+       
+        caso 3:
+          escreva ("\n Digite a quantidade:  ")
+          leia(quant)
+          total = total +(quant*14.00)
+        pare
+       
+        caso 4:
+          escreva ("\n Digite a quantidade:  ")
+          leia(quant)
+          total = total +(quant*4.00)
+        pare
+       
+          caso 5:
+          escreva ("\n pedido finalizado! valor total: ", total)
+          leia(quant)
+          total = total +(quant*4.00)
+        pare
+
+
+        caso contrario:
+          escreva("Você digitou a informação incorreta")
+      }      
+    }
+    enquanto(opcao != 5)
+     
+    }
+  }
+}
